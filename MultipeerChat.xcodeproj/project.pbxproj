@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13A43071BAC525A00BB79A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A43061BAC525A00BB79A6 /* AppDelegate.swift */; };
+		A13A43091BAC525A00BB79A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A43081BAC525A00BB79A6 /* ViewController.swift */; };
+		A13A430C1BAC525A00BB79A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13A430A1BAC525A00BB79A6 /* Main.storyboard */; };
+		A13A430F1BAC525A00BB79A6 /* MultipeerChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13A430D1BAC525A00BB79A6 /* MultipeerChat.xcdatamodeld */; };
+		A13A43111BAC525A00BB79A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13A43101BAC525A00BB79A6 /* Assets.xcassets */; };
+		A13A43141BAC525A00BB79A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13A43121BAC525A00BB79A6 /* LaunchScreen.storyboard */; };
+		A13A431F1BAC525A00BB79A6 /* MultipeerChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A431E1BAC525A00BB79A6 /* MultipeerChatTests.swift */; };
+		A13A432A1BAC525A00BB79A6 /* MultipeerChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A43291BAC525A00BB79A6 /* MultipeerChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A13A431B1BAC525A00BB79A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13A42FB1BAC525900BB79A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13A43021BAC525A00BB79A6;
+			remoteInfo = MultipeerChat;
+		};
+		A13A43261BAC525A00BB79A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13A42FB1BAC525900BB79A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13A43021BAC525A00BB79A6;
+			remoteInfo = MultipeerChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A13A43031BAC525A00BB79A6 /* MultipeerChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipeerChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13A43061BAC525A00BB79A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A13A43081BAC525A00BB79A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A13A430B1BAC525A00BB79A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A13A430E1BAC525A00BB79A6 /* MultipeerChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultipeerChat.xcdatamodel; sourceTree = "<group>"; };
+		A13A43101BAC525A00BB79A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A13A43131BAC525A00BB79A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A13A43151BAC525A00BB79A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13A431A1BAC525A00BB79A6 /* MultipeerChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13A431E1BAC525A00BB79A6 /* MultipeerChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerChatTests.swift; sourceTree = "<group>"; };
+		A13A43201BAC525A00BB79A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13A43251BAC525A00BB79A6 /* MultipeerChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13A43291BAC525A00BB79A6 /* MultipeerChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerChatUITests.swift; sourceTree = "<group>"; };
+		A13A432B1BAC525A00BB79A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A13A43001BAC525A00BB79A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43171BAC525A00BB79A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43221BAC525A00BB79A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13A42FA1BAC525900BB79A6 = {
+			isa = PBXGroup;
+			children = (
+				A13A43051BAC525A00BB79A6 /* MultipeerChat */,
+				A13A431D1BAC525A00BB79A6 /* MultipeerChatTests */,
+				A13A43281BAC525A00BB79A6 /* MultipeerChatUITests */,
+				A13A43041BAC525A00BB79A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A13A43041BAC525A00BB79A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13A43031BAC525A00BB79A6 /* MultipeerChat.app */,
+				A13A431A1BAC525A00BB79A6 /* MultipeerChatTests.xctest */,
+				A13A43251BAC525A00BB79A6 /* MultipeerChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A13A43051BAC525A00BB79A6 /* MultipeerChat */ = {
+			isa = PBXGroup;
+			children = (
+				A13A43061BAC525A00BB79A6 /* AppDelegate.swift */,
+				A13A43081BAC525A00BB79A6 /* ViewController.swift */,
+				A13A430A1BAC525A00BB79A6 /* Main.storyboard */,
+				A13A43101BAC525A00BB79A6 /* Assets.xcassets */,
+				A13A43121BAC525A00BB79A6 /* LaunchScreen.storyboard */,
+				A13A43151BAC525A00BB79A6 /* Info.plist */,
+				A13A430D1BAC525A00BB79A6 /* MultipeerChat.xcdatamodeld */,
+			);
+			path = MultipeerChat;
+			sourceTree = "<group>";
+		};
+		A13A431D1BAC525A00BB79A6 /* MultipeerChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				A13A431E1BAC525A00BB79A6 /* MultipeerChatTests.swift */,
+				A13A43201BAC525A00BB79A6 /* Info.plist */,
+			);
+			path = MultipeerChatTests;
+			sourceTree = "<group>";
+		};
+		A13A43281BAC525A00BB79A6 /* MultipeerChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A13A43291BAC525A00BB79A6 /* MultipeerChatUITests.swift */,
+				A13A432B1BAC525A00BB79A6 /* Info.plist */,
+			);
+			path = MultipeerChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13A43021BAC525A00BB79A6 /* MultipeerChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13A432E1BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChat" */;
+			buildPhases = (
+				A13A42FF1BAC525A00BB79A6 /* Sources */,
+				A13A43001BAC525A00BB79A6 /* Frameworks */,
+				A13A43011BAC525A00BB79A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultipeerChat;
+			productName = MultipeerChat;
+			productReference = A13A43031BAC525A00BB79A6 /* MultipeerChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A13A43191BAC525A00BB79A6 /* MultipeerChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13A43311BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChatTests" */;
+			buildPhases = (
+				A13A43161BAC525A00BB79A6 /* Sources */,
+				A13A43171BAC525A00BB79A6 /* Frameworks */,
+				A13A43181BAC525A00BB79A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13A431C1BAC525A00BB79A6 /* PBXTargetDependency */,
+			);
+			name = MultipeerChatTests;
+			productName = MultipeerChatTests;
+			productReference = A13A431A1BAC525A00BB79A6 /* MultipeerChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A13A43241BAC525A00BB79A6 /* MultipeerChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13A43341BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChatUITests" */;
+			buildPhases = (
+				A13A43211BAC525A00BB79A6 /* Sources */,
+				A13A43221BAC525A00BB79A6 /* Frameworks */,
+				A13A43231BAC525A00BB79A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13A43271BAC525A00BB79A6 /* PBXTargetDependency */,
+			);
+			name = MultipeerChatUITests;
+			productName = MultipeerChatUITests;
+			productReference = A13A43251BAC525A00BB79A6 /* MultipeerChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A13A42FB1BAC525900BB79A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Hermes Frangoudis";
+				TargetAttributes = {
+					A13A43021BAC525A00BB79A6 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WC65ELHV6C;
+					};
+					A13A43191BAC525A00BB79A6 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A13A43021BAC525A00BB79A6;
+					};
+					A13A43241BAC525A00BB79A6 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A13A43021BAC525A00BB79A6;
+					};
+				};
+			};
+			buildConfigurationList = A13A42FE1BAC525900BB79A6 /* Build configuration list for PBXProject "MultipeerChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A13A42FA1BAC525900BB79A6;
+			productRefGroup = A13A43041BAC525A00BB79A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13A43021BAC525A00BB79A6 /* MultipeerChat */,
+				A13A43191BAC525A00BB79A6 /* MultipeerChatTests */,
+				A13A43241BAC525A00BB79A6 /* MultipeerChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13A43011BAC525A00BB79A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13A43141BAC525A00BB79A6 /* LaunchScreen.storyboard in Resources */,
+				A13A43111BAC525A00BB79A6 /* Assets.xcassets in Resources */,
+				A13A430C1BAC525A00BB79A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43181BAC525A00BB79A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43231BAC525A00BB79A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A13A42FF1BAC525A00BB79A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13A43091BAC525A00BB79A6 /* ViewController.swift in Sources */,
+				A13A43071BAC525A00BB79A6 /* AppDelegate.swift in Sources */,
+				A13A430F1BAC525A00BB79A6 /* MultipeerChat.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43161BAC525A00BB79A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13A431F1BAC525A00BB79A6 /* MultipeerChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13A43211BAC525A00BB79A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13A432A1BAC525A00BB79A6 /* MultipeerChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A13A431C1BAC525A00BB79A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13A43021BAC525A00BB79A6 /* MultipeerChat */;
+			targetProxy = A13A431B1BAC525A00BB79A6 /* PBXContainerItemProxy */;
+		};
+		A13A43271BAC525A00BB79A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13A43021BAC525A00BB79A6 /* MultipeerChat */;
+			targetProxy = A13A43261BAC525A00BB79A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A13A430A1BAC525A00BB79A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13A430B1BAC525A00BB79A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A13A43121BAC525A00BB79A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13A43131BAC525A00BB79A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A13A432C1BAC525A00BB79A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A13A432D1BAC525A00BB79A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A13A432F1BAC525A00BB79A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MultipeerChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamhermes.MultipeerChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A13A43301BAC525A00BB79A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MultipeerChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamhermes.MultipeerChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A13A43321BAC525A00BB79A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MultipeerChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blippar.dev.MultipeerChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipeerChat.app/MultipeerChat";
+			};
+			name = Debug;
+		};
+		A13A43331BAC525A00BB79A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MultipeerChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blippar.dev.MultipeerChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipeerChat.app/MultipeerChat";
+			};
+			name = Release;
+		};
+		A13A43351BAC525A00BB79A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MultipeerChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blippar.dev.MultipeerChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MultipeerChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A13A43361BAC525A00BB79A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MultipeerChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blippar.dev.MultipeerChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MultipeerChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13A42FE1BAC525900BB79A6 /* Build configuration list for PBXProject "MultipeerChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13A432C1BAC525A00BB79A6 /* Debug */,
+				A13A432D1BAC525A00BB79A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13A432E1BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13A432F1BAC525A00BB79A6 /* Debug */,
+				A13A43301BAC525A00BB79A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13A43311BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13A43321BAC525A00BB79A6 /* Debug */,
+				A13A43331BAC525A00BB79A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13A43341BAC525A00BB79A6 /* Build configuration list for PBXNativeTarget "MultipeerChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13A43351BAC525A00BB79A6 /* Debug */,
+				A13A43361BAC525A00BB79A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A13A430D1BAC525A00BB79A6 /* MultipeerChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A13A430E1BAC525A00BB79A6 /* MultipeerChat.xcdatamodel */,
+			);
+			currentVersion = A13A430E1BAC525A00BB79A6 /* MultipeerChat.xcdatamodel */;
+			path = MultipeerChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A13A42FB1BAC525900BB79A6 /* Project object */;
+}

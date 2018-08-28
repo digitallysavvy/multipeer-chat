@@ -138,7 +138,7 @@ MCSessionDelegate {
     func session(_ session: MCSession,
         didFinishReceivingResourceWithName resourceName: String,
         fromPeer peerID: MCPeerID,
-        at localURL: URL, withError error: Error?)  {
+        at localURL: URL?, withError error: Error?)  {
             // Called when a file has finished transferring from another peer
     }
     

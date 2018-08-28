@@ -21,6 +21,8 @@ MCSessionDelegate {
 
     @IBOutlet weak var chatView: UITextView!
     @IBOutlet weak var messageField: UITextField!
+    @IBOutlet weak var connectButton: UIButton!
+    @IBOutlet weak var quitChatBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -30,6 +32,8 @@ MCSessionDelegate {
         self.peerID = MCPeerID(displayName: UIDevice.current.name)
         self.session = MCSession(peer: peerID)
         self.session.delegate = self
+        
+        self.quitChatBtn.isHidden = true
         
         // create the browser viewcontroller with a unique service name
         self.browser = MCBrowserViewController(serviceType:serviceType,
@@ -42,6 +46,9 @@ MCSessionDelegate {
         
         // tell the assistant to start advertising our fabulous chat
         self.assistant.start()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +79,11 @@ MCSessionDelegate {
         self.messageField.text = ""
         
     }
+    
+    @IBAction func quitChat(_ sender: Any) {
+        self.session.disconnect()
+    }
+    
     
     func updateChat(_ text : String, fromPeer peerID: MCPeerID) {
         // Appends some text to the chat view
@@ -104,6 +116,8 @@ MCSessionDelegate {
             // button was tapped)
             
             self.dismiss(animated: true, completion: nil)
+        connectButton.isHidden = true
+        quitChatBtn.isHidden = false
     }
     
     func browserViewControllerWasCancelled(
@@ -150,7 +164,31 @@ MCSessionDelegate {
     func session(_ session: MCSession, peer peerID: MCPeerID,
         didChange state: MCSessionState)  {
             // Called when a connected peer changes state (for example, goes offline)
+        if session.connectedPeers.count > 0 {
+            toggleButtons(state: true)
+        } else  {
+            toggleButtons(state: false)
+        }
             
+    }
+    
+    func toggleButtons (state: Bool) {
+        self.connectButton.isHidden = !state
+        self.quitChatBtn.isHidden = state
+    }
+    
+    
+    /// these observers are terrible
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            self.view.frame.origin.y -= keyboardSize.height
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            self.view.frame.origin.y = 0
+        }
     }
     
 

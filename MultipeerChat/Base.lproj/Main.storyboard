@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,45 +23,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ztG-Eb-tFT">
-                                <rect key="frame" x="0.0" y="20" width="600" height="522"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="633"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-eJ-PbF">
-                                <rect key="frame" x="331" y="587" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-eJ-PbF">
+                                <rect key="frame" x="358" y="698" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="ufd-wa-vp4"/>
+                                    <constraint firstAttribute="height" constant="30" id="v0S-sq-zeG"/>
+                                </constraints>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAO-DN-74n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP7-4g-k1y">
-                                <rect key="frame" x="253" y="587" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP7-4g-k1y">
+                                <rect key="frame" x="145" y="349" width="125" height="39"/>
                                 <color key="backgroundColor" red="0.86726641414141414" green="0.86726641414141414" blue="0.86726641414141414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="URk-8q-4Kv"/>
+                                    <constraint firstAttribute="width" constant="125" id="upg-nX-tGK"/>
+                                </constraints>
                                 <state key="normal" title="Connect"/>
                                 <connections>
                                     <action selector="showBrowser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRC-eb-fzQ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="77o-G9-dCi">
-                                <rect key="frame" x="28" y="550" width="359" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="77o-G9-dCi">
+                                <rect key="frame" x="20" y="698" width="330" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaN-hO-Ty6">
+                                <rect key="frame" x="316" y="20" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="7E5-mj-gPb"/>
+                                    <constraint firstAttribute="height" constant="30" id="KAB-98-eNj"/>
+                                </constraints>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="quitChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3H-u8-flE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7AZ-eJ-PbF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gx5-OP-GJ3"/>
+                            <constraint firstItem="TaN-hO-Ty6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IHR-0L-5Gx"/>
+                            <constraint firstItem="7AZ-eJ-PbF" firstAttribute="centerY" secondItem="77o-G9-dCi" secondAttribute="centerY" id="Iz3-g3-Yoy"/>
+                            <constraint firstItem="eP7-4g-k1y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MBb-j9-9YE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="77o-G9-dCi" secondAttribute="bottom" constant="8" id="Mbd-fd-3md"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7AZ-eJ-PbF" secondAttribute="bottom" constant="8" id="NHp-1J-xLh"/>
+                            <constraint firstItem="TaN-hO-Ty6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SrA-bv-bQZ"/>
+                            <constraint firstItem="7AZ-eJ-PbF" firstAttribute="leading" secondItem="77o-G9-dCi" secondAttribute="trailing" constant="8" id="ULg-tS-Qgv"/>
+                            <constraint firstItem="eP7-4g-k1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTs-in-uHo"/>
+                            <constraint firstItem="77o-G9-dCi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wpn-Nv-kAz"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="chatView" destination="ztG-Eb-tFT" id="sUE-XT-VJ8"/>
+                        <outlet property="connectButton" destination="eP7-4g-k1y" id="y9Q-df-gZa"/>
                         <outlet property="messageField" destination="77o-G9-dCi" id="5ta-xq-zPt"/>
+                        <outlet property="quitChatBtn" destination="TaN-hO-Ty6" id="f39-vD-ZfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363.768115942029" y="472.01086956521743"/>
+            <point key="canvasLocation" x="363" y="472"/>
         </scene>
     </scenes>
 </document>
